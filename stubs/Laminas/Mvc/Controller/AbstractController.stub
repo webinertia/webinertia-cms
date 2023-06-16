@@ -1,0 +1,52 @@
+<?php
+
+namespace Laminas\Mvc\Controller;
+
+use Laminas\Stdlib\DispatchableInterface as Dispatchable;
+use Laminas\EventManager\EventManagerAwareInterface;
+use Laminas\Mvc\InjectApplicationEventInterface;
+use Laminas\Http\PhpEnvironment\Response;
+use Laminas\Http\PhpEnvironment\Request;
+
+/**
+ * Abstract controller
+ *
+ * Convenience methods for pre-built plugins (@see __call):
+ * @codingStandardsIgnoreStart
+ * @method \Laminas\View\Model\ModelInterface acceptableViewModelSelector(array $matchAgainst = null, bool $returnDefault = true, \Laminas\Http\Header\Accept\FieldValuePart\AbstractFieldValuePart $resultReference = null)
+ * @codingStandardsIgnoreEnd
+ * @method \Laminas\Mvc\Controller\Plugin\Forward forward()
+ * @method \Laminas\Mvc\Controller\Plugin\Layout|\Laminas\View\Model\ModelInterface layout(string $template = null)
+ * @method \Laminas\Mvc\Controller\Plugin\Params|mixed params(string $param = null, mixed $default = null)
+ * @method \Laminas\Mvc\Controller\Plugin\Redirect redirect()
+ * @method \Laminas\Mvc\Controller\Plugin\Url url()
+ * @method \Laminas\View\Model\ViewModel createHttpNotFoundModel(Response $response)
+ */
+abstract class AbstractController implements
+    Dispatchable,
+    EventManagerAwareInterface,
+    InjectApplicationEventInterface
+{
+    /** @var Request $request */
+    protected $request;
+
+    /** @var Response $response */
+    protected $response;
+    /**
+     * Get request object
+     *
+     * @return Request
+     */
+    public function getRequest()
+    {
+    }
+
+    /**
+     * Get response object
+     *
+     * @return Response
+     */
+    public function getResponse()
+    {
+    }
+}

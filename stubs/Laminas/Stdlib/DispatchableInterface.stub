@@ -1,0 +1,7 @@
+<?php
+
+namespace Laminas\Stdlib;
+
+interface DispatchableInterface
+{
+}

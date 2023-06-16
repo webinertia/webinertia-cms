@@ -1,0 +1,18 @@
+parameters:
+    level: 1
+    paths:
+        - module
+    universalObjectCratesClasses:
+        - module/*/src/Model/*
+    earlyTerminatingMethodCalls:
+        App\Controller\AbstractAppController:
+            - redirect
+            - isAllowed
+            - acl
+    stubFiles:
+    - stubs/Laminas/EventManager/EventManagerAwareInterface.stub
+    - stubs/Laminas/Mvc/Controller/AbstractController.stub
+    - stubs/Laminas/Mvc/InjectApplicationEventInterface.stub
+    - stubs/Laminas/Stdlib/DispatchableInterface.stub
+    - stubs/Laminas/Http/PhpEnvironment/Request.stub
+    - stubs/Laminas/Http/PhpEnvironment/Response.stub

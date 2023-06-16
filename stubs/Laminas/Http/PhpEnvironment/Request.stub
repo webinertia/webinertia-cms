@@ -1,0 +1,7 @@
+<?php
+
+namespace Laminas\Http\PhpEnvironment;
+
+class Request
+{
+}
