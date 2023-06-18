@@ -57,13 +57,14 @@
             },
             {
                 "name": "webinertia/webinertia-thememanager",
-                "constraint": "^0.0.5",
+                "constraint": "^0.0.6",
                 "prompt": "Would you like to install Webinertia ThemeManager?",
                 "module": true
             }
         ]
     },
     "scripts": {
+        "build-theme": "php vendor/bin/laminas thememanager:build-theme",
         "check": [
             "@cs-check",
             "@phpstan",
@@ -81,7 +82,10 @@
             "php -r 'if (file_exists(\"bin/remove-package-artifacts.php\")) include \"bin/remove-package-artifacts.php\";'",
             "php -r 'if (file_exists(\"CHANGELOG.md\")) unlink(\"CHANGELOG.md\");'"
         ],
-        "post-install-cmd": "@clear-config-cache",
+        "post-install-cmd": [
+            "@clear-config-cache",
+            "@build-theme"
+        ],
         "post-update-cmd": "@clear-config-cache",
         "serve": [
             "Composer\\Config::disableProcessTimeout",
@@ -92,6 +96,7 @@
         "phpstan": "php vendor/bin/phpstan analyse --xdebug"
     },
     "scripts-descriptions": {
+        "build-theme": "Builds the proper directory structure for Webinertia ThemeManager",
         "clear-config-cache": "Clears merged config cache. Required for config changes to be applied.",
         "cs-check": "Run coding standards checks.",
         "cs-fix": "Automatically fix coding standard issues.",
