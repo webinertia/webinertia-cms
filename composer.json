@@ -11,7 +11,6 @@
         "php": "~8.0.0 || ~8.1.0 || ~8.2.0",
         "laminas/laminas-component-installer": "^3.2",
         "laminas/laminas-development-mode": "^3.10",
-        "laminas/laminas-skeleton-installer": "^1.2",
         "laminas/laminas-mvc": "^3.6.0",
         "laminas/laminas-db": "^2.18.0",
         "laminas/laminas-mvc-form": "^2.1.1",
@@ -90,6 +89,6 @@
     "require-dev": {
         "laminas/laminas-developer-tools": "^2.8.0",
         "laminas/laminas-test": "^4.7.0",
-        "phpstan/phpstan": "^1.9.18"
+        "phpstan/phpstan": "^1.10"
     }
 }
