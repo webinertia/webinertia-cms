@@ -27,7 +27,8 @@
         "webinertia/limatus": "^0.0.12",
         "webinertia/webinertia-filter": "^0.0.3",
         "webinertia/webinertia-validator": "^0.0.3",
-        "webinertia/webinertia-session": "^0.0.1"
+        "webinertia/webinertia-session": "^0.0.2",
+        "webinertia/webinertia-thememanager": "^0.0.6"
     },
     "autoload": {
         "psr-4": {
@@ -38,29 +39,6 @@
         "psr-4": {
             "ApplicationTest\\": "module/Application/test/"
         }
-    },
-    "extra": {
-        "laminas-skeleton-installer": [
-            {
-                "name": "laminas/laminas-developer-tools",
-                "constraint": "^2.8.0",
-                "prompt": "Would you like to install the developer toolbar?",
-                "module": true,
-                "dev": true
-            },
-            {
-                "name": "laminas/laminas-test",
-                "constraint": "^4.7.0",
-                "prompt": "Would you like to install MVC testing tools for testing support?",
-                "dev": true
-            },
-            {
-                "name": "webinertia/webinertia-thememanager",
-                "constraint": "^0.0.6",
-                "prompt": "Would you like to install Webinertia ThemeManager?",
-                "module": true
-            }
-        ]
     },
     "scripts": {
         "build-theme": "php vendor/bin/laminas thememanager:build-theme",
@@ -82,8 +60,7 @@
             "php -r 'if (file_exists(\"CHANGELOG.md\")) unlink(\"CHANGELOG.md\");'"
         ],
         "post-install-cmd": [
-            "@development-enable",
-            "@build-theme"
+            "@clear-config-cache"
         ],
         "post-update-cmd": "@clear-config-cache",
         "serve": [
@@ -107,8 +84,12 @@
     },
     "config": {
         "allow-plugins": {
-            "laminas/laminas-component-installer": true,
-            "laminas/laminas-skeleton-installer": true
+            "laminas/laminas-component-installer": true
         }
+    },
+    "require-dev": {
+        "laminas/laminas-developer-tools": "^2.8.0",
+        "laminas/laminas-test": "^4.7.0",
+        "phpstan/phpstan": "^1.9.18"
     }
 }
