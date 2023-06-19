@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e4a401769be6f60da44f41b409b71ff9",
+    "content-hash": "87c55c5238ec5c4f155903e88aa36e3d",
     "packages": [
         {
             "name": "brick/math",
@@ -4620,16 +4620,16 @@
         },
         {
             "name": "webinertia/webinertia-session",
-            "version": "0.0.2",
+            "version": "0.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/webinertia/webinertia-session.git",
-                "reference": "93b96a5b2aec3bd26c94e16cf1ea360aa817cdf4"
+                "reference": "09e45385ec850d82c75ad2002b024bf916dcbefd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/webinertia/webinertia-session/zipball/93b96a5b2aec3bd26c94e16cf1ea360aa817cdf4",
-                "reference": "93b96a5b2aec3bd26c94e16cf1ea360aa817cdf4",
+                "url": "https://api.github.com/repos/webinertia/webinertia-session/zipball/09e45385ec850d82c75ad2002b024bf916dcbefd",
+                "reference": "09e45385ec850d82c75ad2002b024bf916dcbefd",
                 "shasum": ""
             },
             "require": {
@@ -4680,9 +4680,9 @@
             ],
             "support": {
                 "issues": "https://github.com/webinertia/webinertia-session/issues",
-                "source": "https://github.com/webinertia/webinertia-session/tree/0.0.2"
+                "source": "https://github.com/webinertia/webinertia-session/tree/0.0.3"
             },
-            "time": "2023-06-18T21:30:07+00:00"
+            "time": "2023-06-18T23:20:26+00:00"
         },
         {
             "name": "webinertia/webinertia-thememanager",

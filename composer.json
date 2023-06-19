@@ -26,7 +26,7 @@
         "webinertia/limatus": "^0.0.12",
         "webinertia/webinertia-filter": "^0.0.3",
         "webinertia/webinertia-validator": "^0.0.3",
-        "webinertia/webinertia-session": "^0.0.2",
+        "webinertia/webinertia-session": "^0.0.3",
         "webinertia/webinertia-thememanager": "^0.0.6"
     },
     "autoload": {
@@ -68,7 +68,7 @@
         ],
         "test": "vendor/bin/phpunit",
         "static-analysis": "vendor/bin/psalm --shepherd --stats",
-        "phpstan": "php vendor/bin/phpstan analyse --xdebug"
+        "phpstan": "php vendor/bin/phpstan analyse"
     },
     "scripts-descriptions": {
         "build-theme": "Builds the proper directory structure for Webinertia ThemeManager",
