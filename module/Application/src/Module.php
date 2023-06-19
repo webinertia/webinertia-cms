@@ -6,7 +6,7 @@ namespace Application;
 
 class Module
 {
-    /** @return array<string, class-string|string|[]> */
+    /** @return array<string, class-string|string|array> */
     public function getConfig(): array
     {
         return include __DIR__ . '/../config/module.config.php';
