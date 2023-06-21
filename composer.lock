@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "2a7668d9c997a82e61d88743d0d6a151",
+    "content-hash": "f7c372387794f2f25ce664e21f791cbc",
     "packages": [
         {
             "name": "brick/math",
@@ -4686,16 +4686,16 @@
         },
         {
             "name": "webinertia/webinertia-thememanager",
-            "version": "0.0.7",
+            "version": "0.0.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/webinertia/webinertia-thememanager.git",
-                "reference": "e1fe77a55a1bf7015b59025ba4aa1e254f5ff600"
+                "reference": "ec34b3c1ece3e0004ce9a039875f125d97dcc482"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/webinertia/webinertia-thememanager/zipball/e1fe77a55a1bf7015b59025ba4aa1e254f5ff600",
-                "reference": "e1fe77a55a1bf7015b59025ba4aa1e254f5ff600",
+                "url": "https://api.github.com/repos/webinertia/webinertia-thememanager/zipball/ec34b3c1ece3e0004ce9a039875f125d97dcc482",
+                "reference": "ec34b3c1ece3e0004ce9a039875f125d97dcc482",
                 "shasum": ""
             },
             "require": {
@@ -4704,15 +4704,17 @@
                 "laminas/laminas-filter": "^2.32",
                 "laminas/laminas-mvc": "^3.6.0",
                 "laminas/laminas-session": "^2.16",
-                "php": "~8.1.0 || ~8.2.0"
+                "php": "~8.1.0 || ~8.2.0",
+                "webinertia/limatus": "^0.0.12",
+                "webinertia/webinertia-session": "^0.0.3",
+                "webinertia/webinertia-validator": "^0.0.3"
             },
             "require-dev": {
-                "laminas/laminas-coding-standard": "^2.4.0",
+                "laminas/laminas-coding-standard": "^2.5.0",
                 "laminas/laminas-test": "^4.8",
                 "phpstan/extension-installer": "^1.2",
                 "phpstan/phpstan": "1.10.19",
                 "phpunit/phpunit": "10.2.2",
-                "psalm/plugin-phpunit": "^0.18.4",
                 "slam/phpstan-laminas-framework": "^1.4"
             },
             "suggest": {
@@ -4749,9 +4751,9 @@
             ],
             "support": {
                 "issues": "https://github.com/webinertia/webinertia-thememanager/issues",
-                "source": "https://github.com/webinertia/webinertia-thememanager/tree/0.0.7"
+                "source": "https://github.com/webinertia/webinertia-thememanager/tree/0.0.9"
             },
-            "time": "2023-06-20T14:21:06+00:00"
+            "time": "2023-06-21T03:51:29+00:00"
         },
         {
             "name": "webinertia/webinertia-validator",
@@ -4879,6 +4881,137 @@
         }
     ],
     "packages-dev": [
+        {
+            "name": "dealerdirect/phpcodesniffer-composer-installer",
+            "version": "v0.7.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Dealerdirect/phpcodesniffer-composer-installer.git",
+                "reference": "1c968e542d8843d7cd71de3c5c9c3ff3ad71a1db"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Dealerdirect/phpcodesniffer-composer-installer/zipball/1c968e542d8843d7cd71de3c5c9c3ff3ad71a1db",
+                "reference": "1c968e542d8843d7cd71de3c5c9c3ff3ad71a1db",
+                "shasum": ""
+            },
+            "require": {
+                "composer-plugin-api": "^1.0 || ^2.0",
+                "php": ">=5.3",
+                "squizlabs/php_codesniffer": "^2.0 || ^3.1.0 || ^4.0"
+            },
+            "require-dev": {
+                "composer/composer": "*",
+                "php-parallel-lint/php-parallel-lint": "^1.3.1",
+                "phpcompatibility/php-compatibility": "^9.0"
+            },
+            "type": "composer-plugin",
+            "extra": {
+                "class": "Dealerdirect\\Composer\\Plugin\\Installers\\PHPCodeSniffer\\Plugin"
+            },
+            "autoload": {
+                "psr-4": {
+                    "Dealerdirect\\Composer\\Plugin\\Installers\\PHPCodeSniffer\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Franck Nijhof",
+                    "email": "franck.nijhof@dealerdirect.com",
+                    "homepage": "http://www.frenck.nl",
+                    "role": "Developer / IT Manager"
+                },
+                {
+                    "name": "Contributors",
+                    "homepage": "https://github.com/Dealerdirect/phpcodesniffer-composer-installer/graphs/contributors"
+                }
+            ],
+            "description": "PHP_CodeSniffer Standards Composer Installer Plugin",
+            "homepage": "http://www.dealerdirect.com",
+            "keywords": [
+                "PHPCodeSniffer",
+                "PHP_CodeSniffer",
+                "code quality",
+                "codesniffer",
+                "composer",
+                "installer",
+                "phpcbf",
+                "phpcs",
+                "plugin",
+                "qa",
+                "quality",
+                "standard",
+                "standards",
+                "style guide",
+                "stylecheck",
+                "tests"
+            ],
+            "support": {
+                "issues": "https://github.com/dealerdirect/phpcodesniffer-composer-installer/issues",
+                "source": "https://github.com/dealerdirect/phpcodesniffer-composer-installer"
+            },
+            "time": "2022-02-04T12:51:07+00:00"
+        },
+        {
+            "name": "laminas/laminas-coding-standard",
+            "version": "2.5.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laminas/laminas-coding-standard.git",
+                "reference": "c1aaa18a7c860c6932677a3e4ec13161f9fc7d61"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laminas/laminas-coding-standard/zipball/c1aaa18a7c860c6932677a3e4ec13161f9fc7d61",
+                "reference": "c1aaa18a7c860c6932677a3e4ec13161f9fc7d61",
+                "shasum": ""
+            },
+            "require": {
+                "dealerdirect/phpcodesniffer-composer-installer": "^0.7 || ^1.0",
+                "php": "^7.4 || ^8.0",
+                "slevomat/coding-standard": "^7.0",
+                "squizlabs/php_codesniffer": "^3.6",
+                "webimpress/coding-standard": "^1.2"
+            },
+            "conflict": {
+                "phpstan/phpdoc-parser": ">=1.6.0"
+            },
+            "type": "phpcodesniffer-standard",
+            "autoload": {
+                "psr-4": {
+                    "LaminasCodingStandard\\": "src/LaminasCodingStandard/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "description": "Laminas Coding Standard",
+            "homepage": "https://laminas.dev",
+            "keywords": [
+                "Coding Standard",
+                "laminas"
+            ],
+            "support": {
+                "chat": "https://laminas.dev/chat",
+                "docs": "https://docs.laminas.dev/laminas-coding-standard/",
+                "forum": "https://discourse.laminas.dev",
+                "issues": "https://github.com/laminas/laminas-coding-standard/issues",
+                "rss": "https://github.com/laminas/laminas-coding-standard/releases.atom",
+                "source": "https://github.com/laminas/laminas-coding-standard"
+            },
+            "funding": [
+                {
+                    "url": "https://funding.communitybridge.org/projects/laminas-project",
+                    "type": "community_bridge"
+                }
+            ],
+            "time": "2023-01-05T15:53:40+00:00"
+        },
         {
             "name": "laminas/laminas-developer-tools",
             "version": "2.8.0",
@@ -5270,6 +5403,50 @@
                 "source": "https://github.com/phar-io/version/tree/3.2.1"
             },
             "time": "2022-02-21T01:04:05+00:00"
+        },
+        {
+            "name": "phpstan/phpdoc-parser",
+            "version": "1.5.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/phpstan/phpdoc-parser.git",
+                "reference": "981cc368a216c988e862a75e526b6076987d1b50"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/phpstan/phpdoc-parser/zipball/981cc368a216c988e862a75e526b6076987d1b50",
+                "reference": "981cc368a216c988e862a75e526b6076987d1b50",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.2 || ^8.0"
+            },
+            "require-dev": {
+                "php-parallel-lint/php-parallel-lint": "^1.2",
+                "phpstan/extension-installer": "^1.0",
+                "phpstan/phpstan": "^1.5",
+                "phpstan/phpstan-strict-rules": "^1.0",
+                "phpunit/phpunit": "^9.5",
+                "symfony/process": "^5.2"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "PHPStan\\PhpDocParser\\": [
+                        "src/"
+                    ]
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "PHPDoc parser with support for nullable, intersection and generic types",
+            "support": {
+                "issues": "https://github.com/phpstan/phpdoc-parser/issues",
+                "source": "https://github.com/phpstan/phpdoc-parser/tree/1.5.1"
+            },
+            "time": "2022-05-05T11:32:40+00:00"
         },
         {
             "name": "phpstan/phpstan",
@@ -6665,6 +6842,165 @@
             "time": "2023-02-07T11:34:05+00:00"
         },
         {
+            "name": "slam/phpstan-laminas-framework",
+            "version": "v1.4.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Slamdunk/phpstan-laminas-framework.git",
+                "reference": "6616c1ba9414a59d731adf56e8c730f25966e3e0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Slamdunk/phpstan-laminas-framework/zipball/6616c1ba9414a59d731adf56e8c730f25966e3e0",
+                "reference": "6616c1ba9414a59d731adf56e8c730f25966e3e0",
+                "shasum": ""
+            },
+            "require": {
+                "php": "~8.1.0 || ~8.2.0",
+                "phpstan/phpstan": "^1.9.2"
+            },
+            "conflict": {
+                "laminas/laminas-cache": "<3.9",
+                "laminas/laminas-filter": "<2.29",
+                "laminas/laminas-form": "<3.8",
+                "laminas/laminas-hydrator": "<4.10",
+                "laminas/laminas-i18n": "<2.21",
+                "laminas/laminas-inputfilter": "<2.22",
+                "laminas/laminas-log": "<2.16",
+                "laminas/laminas-mail": "<2.21",
+                "laminas/laminas-mvc": "<3.6",
+                "laminas/laminas-paginator": "<2.17",
+                "laminas/laminas-validator": "<2.28"
+            },
+            "require-dev": {
+                "laminas/laminas-cache": "^3.9.0",
+                "laminas/laminas-cache-storage-adapter-memory": "^2.2.0",
+                "laminas/laminas-filter": "^2.29.0",
+                "laminas/laminas-form": "^3.8.0",
+                "laminas/laminas-hydrator": "^4.10.0",
+                "laminas/laminas-i18n": "^2.21.0",
+                "laminas/laminas-inputfilter": "^2.22.1",
+                "laminas/laminas-log": "^2.16.0",
+                "laminas/laminas-mail": "^2.21.0",
+                "laminas/laminas-mvc": "^3.6.0",
+                "laminas/laminas-paginator": "^2.17.0",
+                "laminas/laminas-validator": "^2.28.0",
+                "phpstan/phpstan-deprecation-rules": "^1.0.0",
+                "phpstan/phpstan-phpunit": "^1.3.0",
+                "phpunit/phpunit": "^9.5.27",
+                "slam/php-cs-fixer-extensions": "^v3.2.1",
+                "slam/php-debug-r": "^v1.7.0"
+            },
+            "type": "phpstan-extension",
+            "extra": {
+                "phpstan": {
+                    "includes": [
+                        "extension.neon"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "LaminasPhpStan\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Greg Bell",
+                    "email": "greg@bitwombat.com.au"
+                },
+                {
+                    "name": "Michael Gooden",
+                    "email": "me@michaelgooden.net"
+                },
+                {
+                    "name": "Filippo Tessarotto",
+                    "email": "zoeslam@gmail.com"
+                }
+            ],
+            "description": "Laminas Framework 3 MVC controller plugin extension for PHPStan.",
+            "support": {
+                "issues": "https://github.com/Slamdunk/phpstan-laminas-framework/issues",
+                "source": "https://github.com/Slamdunk/phpstan-laminas-framework/tree/v1.4.0"
+            },
+            "funding": [
+                {
+                    "url": "https://paypal.me/filippotessarotto",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/Slamdunk",
+                    "type": "github"
+                }
+            ],
+            "time": "2022-12-12T07:05:02+00:00"
+        },
+        {
+            "name": "slevomat/coding-standard",
+            "version": "7.2.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/slevomat/coding-standard.git",
+                "reference": "aff06ae7a84e4534bf6f821dc982a93a5d477c90"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/slevomat/coding-standard/zipball/aff06ae7a84e4534bf6f821dc982a93a5d477c90",
+                "reference": "aff06ae7a84e4534bf6f821dc982a93a5d477c90",
+                "shasum": ""
+            },
+            "require": {
+                "dealerdirect/phpcodesniffer-composer-installer": "^0.6.2 || ^0.7",
+                "php": "^7.2 || ^8.0",
+                "phpstan/phpdoc-parser": "^1.5.1",
+                "squizlabs/php_codesniffer": "^3.6.2"
+            },
+            "require-dev": {
+                "phing/phing": "2.17.3",
+                "php-parallel-lint/php-parallel-lint": "1.3.2",
+                "phpstan/phpstan": "1.4.10|1.7.1",
+                "phpstan/phpstan-deprecation-rules": "1.0.0",
+                "phpstan/phpstan-phpunit": "1.0.0|1.1.1",
+                "phpstan/phpstan-strict-rules": "1.2.3",
+                "phpunit/phpunit": "7.5.20|8.5.21|9.5.20"
+            },
+            "type": "phpcodesniffer-standard",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "7.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "SlevomatCodingStandard\\": "SlevomatCodingStandard"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Slevomat Coding Standard for PHP_CodeSniffer complements Consistence Coding Standard by providing sniffs with additional checks.",
+            "support": {
+                "issues": "https://github.com/slevomat/coding-standard/issues",
+                "source": "https://github.com/slevomat/coding-standard/tree/7.2.1"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/kukulich",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/slevomat/coding-standard",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2022-05-25T10:58:12+00:00"
+        },
+        {
             "name": "squizlabs/php_codesniffer",
             "version": "3.7.2",
             "source": {
@@ -6984,6 +7320,61 @@
                 }
             ],
             "time": "2021-07-28T10:34:58+00:00"
+        },
+        {
+            "name": "webimpress/coding-standard",
+            "version": "1.3.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/webimpress/coding-standard.git",
+                "reference": "b26557e2386711ecb74f22718f4b4bde5ddbc899"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/webimpress/coding-standard/zipball/b26557e2386711ecb74f22718f4b4bde5ddbc899",
+                "reference": "b26557e2386711ecb74f22718f4b4bde5ddbc899",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.3 || ^8.0",
+                "squizlabs/php_codesniffer": "^3.7.2"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^9.6.4"
+            },
+            "type": "phpcodesniffer-standard",
+            "extra": {
+                "dev-master": "1.2.x-dev",
+                "dev-develop": "1.3.x-dev"
+            },
+            "autoload": {
+                "psr-4": {
+                    "WebimpressCodingStandard\\": "src/WebimpressCodingStandard/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-2-Clause"
+            ],
+            "description": "Webimpress Coding Standard",
+            "keywords": [
+                "Coding Standard",
+                "PSR-2",
+                "phpcs",
+                "psr-12",
+                "webimpress"
+            ],
+            "support": {
+                "issues": "https://github.com/webimpress/coding-standard/issues",
+                "source": "https://github.com/webimpress/coding-standard/tree/1.3.1"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/michalbundyra",
+                    "type": "github"
+                }
+            ],
+            "time": "2023-03-09T15:05:18+00:00"
         }
     ],
     "aliases": [],
