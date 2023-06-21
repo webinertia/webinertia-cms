@@ -27,7 +27,7 @@
         "webinertia/webinertia-filter": "^0.0.3",
         "webinertia/webinertia-validator": "^0.0.3",
         "webinertia/webinertia-session": "^0.0.3",
-        "webinertia/webinertia-thememanager": "^0.0.6"
+        "webinertia/webinertia-thememanager": "^0.0.7"
     },
     "autoload": {
         "psr-4": {
@@ -82,15 +82,19 @@
         "test": "Run unit tests."
     },
     "config": {
+        "sort-packages": true,
         "allow-plugins": {
-            "laminas/laminas-component-installer": true
+            "laminas/laminas-component-installer": true,
+            "composer/package-versions-deprecated": true,
+            "phpstan/extension-installer": true
         }
     },
     "require-dev": {
         "laminas/laminas-developer-tools": "^2.8.0",
+        "laminas/laminas-coding-standard": "^2.5.0",
         "laminas/laminas-test": "^4.7.0",
         "phpstan/phpstan": "^1.10",
-        "squizlabs/php_codesniffer": "^3.7",
-        "phpunit/phpunit": "^10.2"
+        "phpunit/phpunit": "^10.2",
+        "slam/phpstan-laminas-framework": "^1.4"
     }
 }

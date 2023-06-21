@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "87c55c5238ec5c4f155903e88aa36e3d",
+    "content-hash": "2a7668d9c997a82e61d88743d0d6a151",
     "packages": [
         {
             "name": "brick/math",
@@ -4686,16 +4686,16 @@
         },
         {
             "name": "webinertia/webinertia-thememanager",
-            "version": "0.0.6",
+            "version": "0.0.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/webinertia/webinertia-thememanager.git",
-                "reference": "e55a5cd21bf338a17d8661d7402652ac173164cd"
+                "reference": "e1fe77a55a1bf7015b59025ba4aa1e254f5ff600"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/webinertia/webinertia-thememanager/zipball/e55a5cd21bf338a17d8661d7402652ac173164cd",
-                "reference": "e55a5cd21bf338a17d8661d7402652ac173164cd",
+                "url": "https://api.github.com/repos/webinertia/webinertia-thememanager/zipball/e1fe77a55a1bf7015b59025ba4aa1e254f5ff600",
+                "reference": "e1fe77a55a1bf7015b59025ba4aa1e254f5ff600",
                 "shasum": ""
             },
             "require": {
@@ -4749,9 +4749,9 @@
             ],
             "support": {
                 "issues": "https://github.com/webinertia/webinertia-thememanager/issues",
-                "source": "https://github.com/webinertia/webinertia-thememanager/tree/0.0.6"
+                "source": "https://github.com/webinertia/webinertia-thememanager/tree/0.0.7"
             },
-            "time": "2023-06-18T19:53:52+00:00"
+            "time": "2023-06-20T14:21:06+00:00"
         },
         {
             "name": "webinertia/webinertia-validator",
@@ -6992,7 +6992,7 @@
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
-        "php": "~8.0.0 || ~8.1.0 || ~8.2.0"
+        "php": "~8.1.0 || ~8.2.0"
     },
     "platform-dev": [],
     "plugin-api-version": "2.3.0"
