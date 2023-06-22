@@ -26,7 +26,7 @@
         "webinertia/limatus": "^0.0.12",
         "webinertia/webinertia-filter": "^0.0.3",
         "webinertia/webinertia-session": "^0.0.3",
-        "webinertia/webinertia-thememanager": "^0.0.9",
+        "webinertia/webinertia-thememanager": "^0.0.9 || ^0.0.10",
         "webinertia/webinertia-validator": "^0.0.3"
     },
     "autoload": {
