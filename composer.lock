@@ -1208,16 +1208,16 @@
         },
         {
             "name": "laminas/laminas-inputfilter",
-            "version": "2.25.0",
+            "version": "2.26.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laminas/laminas-inputfilter.git",
-                "reference": "d516832d6545f542a9c723d48a0fb5843cd7e2ff"
+                "reference": "d054b8f866244c7fc872f446d071f21bae073b2f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laminas/laminas-inputfilter/zipball/d516832d6545f542a9c723d48a0fb5843cd7e2ff",
-                "reference": "d516832d6545f542a9c723d48a0fb5843cd7e2ff",
+                "url": "https://api.github.com/repos/laminas/laminas-inputfilter/zipball/d054b8f866244c7fc872f446d071f21bae073b2f",
+                "reference": "d054b8f866244c7fc872f446d071f21bae073b2f",
                 "shasum": ""
             },
             "require": {
@@ -1278,7 +1278,7 @@
                     "type": "community_bridge"
                 }
             ],
-            "time": "2023-05-24T16:13:12+00:00"
+            "time": "2023-06-20T15:53:18+00:00"
         },
         {
             "name": "laminas/laminas-json",
@@ -5450,16 +5450,16 @@
         },
         {
             "name": "phpstan/phpstan",
-            "version": "1.10.19",
+            "version": "1.10.21",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpstan/phpstan.git",
-                "reference": "af5a296ff02610c1bfb4ddfac9fd4a08657b9046"
+                "reference": "b2a30186be2e4d97dce754ae4e65eb0ec2f04eb5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/af5a296ff02610c1bfb4ddfac9fd4a08657b9046",
-                "reference": "af5a296ff02610c1bfb4ddfac9fd4a08657b9046",
+                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/b2a30186be2e4d97dce754ae4e65eb0ec2f04eb5",
+                "reference": "b2a30186be2e4d97dce754ae4e65eb0ec2f04eb5",
                 "shasum": ""
             },
             "require": {
@@ -5508,7 +5508,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2023-06-14T15:26:58+00:00"
+            "time": "2023-06-21T20:07:58+00:00"
         },
         {
             "name": "phpunit/php-code-coverage",
