@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f7c372387794f2f25ce664e21f791cbc",
+    "content-hash": "3b322974968a5c389a0bf90d92992311",
     "packages": [
         {
             "name": "brick/math",
@@ -4619,6 +4619,73 @@
             "time": "2023-06-15T00:44:21+00:00"
         },
         {
+            "name": "webinertia/webinertia-log",
+            "version": "0.0.6",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/webinertia/webinertia-log.git",
+                "reference": "bb3156634fa083e55392bbf697d2f865c2138c7f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/webinertia/webinertia-log/zipball/bb3156634fa083e55392bbf697d2f865c2138c7f",
+                "reference": "bb3156634fa083e55392bbf697d2f865c2138c7f",
+                "shasum": ""
+            },
+            "require": {
+                "laminas/laminas-component-installer": "^3.2",
+                "laminas/laminas-db": "^2.18.0",
+                "laminas/laminas-log": "^2.16.1",
+                "laminas/laminas-mail": "^2.23.0",
+                "laminas/laminas-mvc": "^3.6.0",
+                "laminas/laminas-mvc-i18n": "^1.7.0",
+                "php": "~8.1.0 || ~8.2.0"
+            },
+            "require-dev": {
+                "laminas/laminas-coding-standard": "^2.4.0",
+                "laminas/laminas-test": "^4.8",
+                "phpstan/extension-installer": "^1.2",
+                "phpstan/phpstan": "1.10.21",
+                "phpunit/phpunit": "10.2.2",
+                "psalm/plugin-phpunit": "^0.18.4",
+                "slam/phpstan-laminas-framework": "^1.4"
+            },
+            "type": "library",
+            "extra": {
+                "laminas": {
+                    "module": "Webinertia\\Log"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Webinertia\\Log\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Joey Smith",
+                    "email": "jsmith@webinertia.net",
+                    "homepage": "https://webinertia.net/"
+                }
+            ],
+            "description": "Webinertia Log provides event driven logging for Laminas MVC applications",
+            "homepage": "https://github.com/webinertia/webinertia-log/discussions",
+            "keywords": [
+                "laminas log",
+                "mvc",
+                "webinertia"
+            ],
+            "support": {
+                "issues": "https://github.com/webinertia/webinertia-log/issues",
+                "source": "https://github.com/webinertia/webinertia-log/tree/0.0.6"
+            },
+            "time": "2023-06-27T01:56:38+00:00"
+        },
+        {
             "name": "webinertia/webinertia-session",
             "version": "0.0.3",
             "source": {
@@ -4686,16 +4753,16 @@
         },
         {
             "name": "webinertia/webinertia-thememanager",
-            "version": "0.0.9",
+            "version": "0.0.11",
             "source": {
                 "type": "git",
                 "url": "https://github.com/webinertia/webinertia-thememanager.git",
-                "reference": "ec34b3c1ece3e0004ce9a039875f125d97dcc482"
+                "reference": "bf49730d7135f15fac7d033923bcf8a74020ec57"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/webinertia/webinertia-thememanager/zipball/ec34b3c1ece3e0004ce9a039875f125d97dcc482",
-                "reference": "ec34b3c1ece3e0004ce9a039875f125d97dcc482",
+                "url": "https://api.github.com/repos/webinertia/webinertia-thememanager/zipball/bf49730d7135f15fac7d033923bcf8a74020ec57",
+                "reference": "bf49730d7135f15fac7d033923bcf8a74020ec57",
                 "shasum": ""
             },
             "require": {
@@ -4713,7 +4780,7 @@
                 "laminas/laminas-coding-standard": "^2.5.0",
                 "laminas/laminas-test": "^4.8",
                 "phpstan/extension-installer": "^1.2",
-                "phpstan/phpstan": "1.10.19",
+                "phpstan/phpstan": "1.10.21",
                 "phpunit/phpunit": "10.2.2",
                 "slam/phpstan-laminas-framework": "^1.4"
             },
@@ -4751,9 +4818,9 @@
             ],
             "support": {
                 "issues": "https://github.com/webinertia/webinertia-thememanager/issues",
-                "source": "https://github.com/webinertia/webinertia-thememanager/tree/0.0.9"
+                "source": "https://github.com/webinertia/webinertia-thememanager/tree/0.0.11"
             },
-            "time": "2023-06-21T03:51:29+00:00"
+            "time": "2023-06-26T00:54:32+00:00"
         },
         {
             "name": "webinertia/webinertia-validator",

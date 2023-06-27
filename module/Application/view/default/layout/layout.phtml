@@ -5,8 +5,9 @@
  */
 ?>
 <?= $this->doctype() ?>
-<html lang="en">
+<html lang="en" class="h-100">
     <head>
+        <base href="<?=$this->basePath()?>" />
         <meta charset="utf-8">
         <?= $this->headTitle('Webinertia MVC Core')->setSeparator(' - ')->setAutoEscape(false) ?>
 
@@ -19,57 +20,57 @@
         <?= $this->headLink([
                                 'rel' => 'shortcut icon',
                                 'type' => 'image/vnd.microsoft.icon',
-                                'href' => $this->basePath('img/favicon.ico')
-                            ])
-            ->prependStylesheet($this->basePath('css/style.css'))
-            ->prependStylesheet($this->basePath('css/bootstrap.min.css'))
+                                'href' => $this->asset('img/favicon.ico')
+            ])
+            ->appendStylesheet($this->asset('css/bootstrap.min.css'))
+            ->appendStylesheet($this->asset('css/style.css'))
         ?>
         <!-- Scripts -->
         <?= $this->headScript() ?>
     </head>
-    <body>
-        <nav class="navbar navbar-expand-md navbar-dark mb-4" role="navigation">
-            <div class="container">
-                <a class="navbar-brand" href="<?= $this->url('home') ?>">
-                    <img src="<?= $this->basePath('img/webinertia-logo-75.png') ?>" class="d-inline-block" alt="Webinertia" width="75" height="75">
-                    Webinertia
-                </a>
-                <button
-                    class="navbar-toggler"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent"
-                    aria-controls="navbarSupportedContent"
-                    aria-expanded="false"
-                    aria-label="Toggle navigation"
-                >
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item">
-                            <a
-                                class="nav-link active"
-                                aria-current="page"
-                                href="<?= $this->url('home') ?>"
-                            >Home
-                            </a>
-                        </li>
-                    </ul>
-                </div>
+    <body class="d-flex flex-column h-100 bg-secondary">
+        <header class="navbar navbar-expand-md navbar-dark p-3 rounded-bottom container" role="navigation">
+            <a class="navbar-brand" href="<?= $this->url('home') ?>">
+                <img src="<?=$this->asset('img/webinertia-logo-75.png')?>" class="d-inline-block" alt="Webinertia" width="75" height="75">
+                Webinertia
+            </a>
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+            >
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a
+                            class="nav-link active"
+                            aria-current="page"
+                            href="<?= $this->url('home') ?>"
+                        >Home
+                        </a>
+                    </li>
+                </ul>
             </div>
-        </nav>
-        <div class="container">
-            <?= $this->content ?>
-            <hr>
-            <footer>
-                <p>
+        </header>
+        <main class="flex-shrink-0">
+            <section id="work-space" class="container p-4">
+                <?= $this->content ?>
+            </section>
+        </main>
+        <footer class="footer mt-auto">
+            <div class="container footer-bg rounded-top text-light">
+                <span class="d-flex justify-content-center p-2">
                     &copy; <?= date('Y') ?>
-                    <a href="https://github.com/webinertia/community/discussions" target="_blank">Webinertia</a>
-                </p>
-            </footer>
-        </div>
-        <?= $this->inlineScript()
-            ->prependFile($this->basePath('js/bootstrap.min.js')) ?>
+                    &nbsp;<a class="text-light" href="https://github.com/webinertia/community/discussions" target="_blank">Webinertia</a>
+                </span>
+            </div>
+        </footer>
+        <?= $this->inlineScript()->prependFile($this->asset('js/bootstrap.min.js')) ?>
     </body>
 </html>

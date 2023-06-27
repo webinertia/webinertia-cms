@@ -30,5 +30,6 @@ return [
     'Limatus',
     'Webinertia\Session',
     'Webinertia\ThemeManager',
+    'Webinertia\Log',
     'Application',
 ];

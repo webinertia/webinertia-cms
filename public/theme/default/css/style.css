@@ -1,12 +1,26 @@
 :root {
-    --brand-color: #8892bf;
+    --brand-color: #7a86b8;
+    --bs-btn-hover-bg: #98a2d0;
 }
 
 .navbar {
     background-color: var(--brand-color);
 }
 
+.btn {
+    border-color: #211521;
+}
+
 .btn-primary {
     background-color: var(--brand-color);
     border-color: var(--brand-color);
+}
+
+.btn:hover {
+    background-color: #98a2d0;
+    border-color: #4b314b;
+}
+
+.footer-bg {
+    background-color: var(--brand-color);
 }
