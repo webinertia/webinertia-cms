@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f001284509af0be5b676ebc040c74ae9",
+    "content-hash": "792fd5307cbe50fda1968e2458d11cbc",
     "packages": [
         {
             "name": "brick/math",
@@ -4753,16 +4753,16 @@
         },
         {
             "name": "webinertia/webinertia-thememanager",
-            "version": "0.0.14",
+            "version": "0.0.15",
             "source": {
                 "type": "git",
                 "url": "https://github.com/webinertia/webinertia-thememanager.git",
-                "reference": "89f47ab2e764c3daf4ff08edd8242d0af0c2c2f7"
+                "reference": "190e2332c66299b3bfaba2d67ece487669fb474a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/webinertia/webinertia-thememanager/zipball/89f47ab2e764c3daf4ff08edd8242d0af0c2c2f7",
-                "reference": "89f47ab2e764c3daf4ff08edd8242d0af0c2c2f7",
+                "url": "https://api.github.com/repos/webinertia/webinertia-thememanager/zipball/190e2332c66299b3bfaba2d67ece487669fb474a",
+                "reference": "190e2332c66299b3bfaba2d67ece487669fb474a",
                 "shasum": ""
             },
             "require": {
@@ -4818,9 +4818,9 @@
             ],
             "support": {
                 "issues": "https://github.com/webinertia/webinertia-thememanager/issues",
-                "source": "https://github.com/webinertia/webinertia-thememanager/tree/0.0.14"
+                "source": "https://github.com/webinertia/webinertia-thememanager/tree/0.0.15"
             },
-            "time": "2023-07-01T23:05:03+00:00"
+            "time": "2023-07-02T06:23:14+00:00"
         },
         {
             "name": "webinertia/webinertia-validator",
