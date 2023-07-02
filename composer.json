@@ -92,11 +92,12 @@
         }
     },
     "require-dev": {
-        "laminas/laminas-developer-tools": "^2.8.0",
         "laminas/laminas-coding-standard": "^2.5.0",
+        "laminas/laminas-developer-tools": "^2.8.0",
         "laminas/laminas-test": "^4.7.0",
         "phpstan/phpstan": "^1.10",
         "phpunit/phpunit": "^10.2",
-        "slam/phpstan-laminas-framework": "^1.4"
+        "slam/phpstan-laminas-framework": "^1.4",
+        "webinertia/bjy-profiler": "^0.0.11"
     }
 }

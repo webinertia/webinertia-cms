@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "792fd5307cbe50fda1968e2458d11cbc",
+    "content-hash": "dec55bde1f9b86c7361ca36f34fb62b6",
     "packages": [
         {
             "name": "brick/math",
@@ -7442,6 +7442,71 @@
                 }
             ],
             "time": "2023-03-09T15:05:18+00:00"
+        },
+        {
+            "name": "webinertia/bjy-profiler",
+            "version": "0.0.11",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/webinertia/bjy-profiler.git",
+                "reference": "4c172a4459f30e48f292afbf26cf3f66622b9295"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/webinertia/bjy-profiler/zipball/4c172a4459f30e48f292afbf26cf3f66622b9295",
+                "reference": "4c172a4459f30e48f292afbf26cf3f66622b9295",
+                "shasum": ""
+            },
+            "require": {
+                "laminas/laminas-component-installer": "^3.2.1",
+                "php": "^8.0 | ^8.1 | ^8.2"
+            },
+            "type": "library",
+            "extra": {
+                "laminas": {
+                    "module": "BjyProfiler",
+                    "config-provider": "BjyProfiler\\ConfigProvider"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "BjyProfiler\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ben Youngblood",
+                    "email": "bx.youngblood@gmail.com",
+                    "homepage": "http://bjyoungblood.com/"
+                },
+                {
+                    "name": "Andrey N. Mokhov",
+                    "email": "github@mokhov.com",
+                    "homepage": "https://github.com/andrey-mokhov"
+                },
+                {
+                    "name": "Rafal Linca",
+                    "email": "kontakt@rafalllinca.pl",
+                    "homepage": "https://rafallinca.pl"
+                }
+            ],
+            "description": "Database profiler for Laminas\\Db. Module forked from rafalli/BjyProfiler",
+            "homepage": "https://github.com/webinertia/BjyProfiler",
+            "keywords": [
+                "db",
+                "laminas",
+                "profiler",
+                "webinertia"
+            ],
+            "support": {
+                "issues": "https://github.com/webinertia/bjy-profiler/issues",
+                "source": "https://github.com/webinertia/bjy-profiler/tree/0.0.11"
+            },
+            "time": "2023-07-02T17:06:03+00:00"
         }
     ],
     "aliases": [],
