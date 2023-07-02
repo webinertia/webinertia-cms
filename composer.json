@@ -27,7 +27,7 @@
         "webinertia/webinertia-filter": "^0.0.3",
         "webinertia/webinertia-log": "^0.0.6",
         "webinertia/webinertia-session": "^0.0.3",
-        "webinertia/webinertia-thememanager": "^0.0.11",
+        "webinertia/webinertia-thememanager": "^0.0.14",
         "webinertia/webinertia-validator": "^0.0.3"
     },
     "autoload": {

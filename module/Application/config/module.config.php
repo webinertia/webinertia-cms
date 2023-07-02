@@ -54,4 +54,15 @@ return [
             __DIR__ . '/../view',
         ],
     ],
+    'navigation' => [
+        'default' => [
+            [
+                'label'  => 'Home',
+                'route'  => 'home',
+                'class'  => 'nav-link',
+                'order'  => -999,
+                'action' => 'index',
+            ],
+        ],
+    ],
 ];

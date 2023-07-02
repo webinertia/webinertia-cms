@@ -47,14 +47,13 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a
-                            class="nav-link active"
-                            aria-current="page"
-                            href="<?= $this->url('home') ?>"
-                        >Home
-                        </a>
-                    </li>
+                    <?php
+                        echo $this->navigation('default')
+                        ->menu()
+                        ->setMinDepth(0)
+                        ->setMaxDepth(0)
+                        ->setUlClass('nav navbar-nav');
+                    ?>
                 </ul>
             </div>
         </header>
@@ -65,7 +64,7 @@
         </main>
         <footer class="footer mt-auto">
             <div class="container footer-bg rounded-top text-light">
-                <span class="d-flex justify-content-center p-2">
+                <span class="d-flex p-2">
                     &copy; <?= date('Y') ?>
                     &nbsp;<a class="text-light" href="https://github.com/webinertia/community/discussions" target="_blank">Webinertia</a>
                 </span>
