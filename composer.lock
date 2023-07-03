@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "dec55bde1f9b86c7361ca36f34fb62b6",
+    "content-hash": "2bc8e7261f22a1d577c42ba31ed87197",
     "packages": [
         {
             "name": "brick/math",
@@ -4620,16 +4620,16 @@
         },
         {
             "name": "webinertia/webinertia-log",
-            "version": "0.0.7",
+            "version": "0.0.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/webinertia/webinertia-log.git",
-                "reference": "a76a0c82f95ed0a0047689dc5423e78b333b0ad3"
+                "reference": "ebb967fa4e3af6c6c464bb1e7b34b3d4a496085b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/webinertia/webinertia-log/zipball/a76a0c82f95ed0a0047689dc5423e78b333b0ad3",
-                "reference": "a76a0c82f95ed0a0047689dc5423e78b333b0ad3",
+                "url": "https://api.github.com/repos/webinertia/webinertia-log/zipball/ebb967fa4e3af6c6c464bb1e7b34b3d4a496085b",
+                "reference": "ebb967fa4e3af6c6c464bb1e7b34b3d4a496085b",
                 "shasum": ""
             },
             "require": {
@@ -4681,9 +4681,9 @@
             ],
             "support": {
                 "issues": "https://github.com/webinertia/webinertia-log/issues",
-                "source": "https://github.com/webinertia/webinertia-log/tree/0.0.7"
+                "source": "https://github.com/webinertia/webinertia-log/tree/0.0.8"
             },
-            "time": "2023-07-02T05:15:25+00:00"
+            "time": "2023-07-03T00:51:57+00:00"
         },
         {
             "name": "webinertia/webinertia-session",

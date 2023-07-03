@@ -25,7 +25,7 @@
         "ramsey/uuid": "^4.7",
         "webinertia/limatus": "^0.0.12",
         "webinertia/webinertia-filter": "^0.0.3",
-        "webinertia/webinertia-log": "^0.0.7",
+        "webinertia/webinertia-log": "^0.0.8",
         "webinertia/webinertia-session": "^0.0.3",
         "webinertia/webinertia-thememanager": "^0.0.15",
         "webinertia/webinertia-validator": "^0.0.3"
