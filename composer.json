@@ -1,5 +1,5 @@
 {
-    "name": "webinertia/webinertia-mvc",
+    "name": "webinertia/webinertia-cms",
     "description": "Webinertia Mvc Metapackage",
     "type": "project",
     "license": "BSD-3-Clause",
@@ -22,12 +22,16 @@
         "laminas/laminas-mvc-i18n": "^1.7.0",
         "laminas/laminas-mvc-plugins": "^1.2.0",
         "laminas/laminas-navigation": "^2.18.1",
+        "laminas/laminas-permissions-acl": "^2.15",
         "ramsey/uuid": "^4.7",
         "webinertia/limatus": "^0.0.12",
+        "webinertia/webinertia-acl": "^0.0.1",
+        "webinertia/webinertia-db": "^0.0.2",
         "webinertia/webinertia-filter": "^0.0.3",
-        "webinertia/webinertia-log": "^0.0.8",
-        "webinertia/webinertia-session": "^0.0.3",
-        "webinertia/webinertia-thememanager": "^0.0.15",
+        "webinertia/webinertia-log": "^0.0.9",
+        "webinertia/webinertia-mvc": "^0.0.2",
+        "webinertia/webinertia-session": "^0.0.4",
+        "webinertia/webinertia-thememanager": "^0.0.17",
         "webinertia/webinertia-validator": "^0.0.3"
     },
     "autoload": {

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "2bc8e7261f22a1d577c42ba31ed87197",
+    "content-hash": "9d0465f423e5992cfed328a964d4a0db",
     "packages": [
         {
             "name": "brick/math",
@@ -2315,6 +2315,70 @@
             "time": "2022-12-06T18:03:48+00:00"
         },
         {
+            "name": "laminas/laminas-permissions-acl",
+            "version": "2.15.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laminas/laminas-permissions-acl.git",
+                "reference": "ea9f6643a624b3e847f7d637eb828498654f492e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laminas/laminas-permissions-acl/zipball/ea9f6643a624b3e847f7d637eb828498654f492e",
+                "reference": "ea9f6643a624b3e847f7d637eb828498654f492e",
+                "shasum": ""
+            },
+            "require": {
+                "php": "~8.1.0 || ~8.2.0"
+            },
+            "conflict": {
+                "laminas/laminas-servicemanager": "<3.0",
+                "zendframework/zend-permissions-acl": "*"
+            },
+            "require-dev": {
+                "laminas/laminas-coding-standard": "~2.5.0",
+                "laminas/laminas-servicemanager": "^3.21",
+                "phpbench/phpbench": "^1.2.10",
+                "phpunit/phpunit": "^10.1.3",
+                "psalm/plugin-phpunit": "^0.18.4",
+                "vimeo/psalm": "^5.12"
+            },
+            "suggest": {
+                "laminas/laminas-servicemanager": "To support Laminas\\Permissions\\Acl\\Assertion\\AssertionManager plugin manager usage"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Laminas\\Permissions\\Acl\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "description": "Provides a lightweight and flexible access control list (ACL) implementation for privileges management",
+            "homepage": "https://laminas.dev",
+            "keywords": [
+                "acl",
+                "laminas"
+            ],
+            "support": {
+                "chat": "https://laminas.dev/chat",
+                "docs": "https://docs.laminas.dev/laminas-permissions-acl/",
+                "forum": "https://discourse.laminas.dev",
+                "issues": "https://github.com/laminas/laminas-permissions-acl/issues",
+                "rss": "https://github.com/laminas/laminas-permissions-acl/releases.atom",
+                "source": "https://github.com/laminas/laminas-permissions-acl"
+            },
+            "funding": [
+                {
+                    "url": "https://funding.communitybridge.org/projects/laminas-project",
+                    "type": "community_bridge"
+                }
+            ],
+            "time": "2023-05-29T19:28:02+00:00"
+        },
+        {
             "name": "laminas/laminas-router",
             "version": "3.11.1",
             "source": {
@@ -4550,6 +4614,134 @@
             "time": "2023-06-15T18:46:10+00:00"
         },
         {
+            "name": "webinertia/webinertia-acl",
+            "version": "0.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/webinertia/webinertia-acl.git",
+                "reference": "948d19882fdd2b8aa40da304274067bcc405a705"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/webinertia/webinertia-acl/zipball/948d19882fdd2b8aa40da304274067bcc405a705",
+                "reference": "948d19882fdd2b8aa40da304274067bcc405a705",
+                "shasum": ""
+            },
+            "require": {
+                "laminas/laminas-component-installer": "^3.2",
+                "laminas/laminas-permissions-acl": "^2.15",
+                "php": "~8.1.0 || ~8.2.0"
+            },
+            "require-dev": {
+                "laminas/laminas-coding-standard": "^2.4.0",
+                "laminas/laminas-test": "^4.8",
+                "phpstan/extension-installer": "^1.2",
+                "phpstan/phpstan": "1.10.21",
+                "phpunit/phpunit": "10.2.2",
+                "psalm/plugin-phpunit": "^0.18.4",
+                "slam/phpstan-laminas-framework": "^1.4"
+            },
+            "type": "library",
+            "extra": {
+                "laminas": {
+                    "module": "Webinertia\\Acl"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Webinertia\\Acl\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Joey Smith",
+                    "email": "jsmith@webinertia.net",
+                    "homepage": "https://webinertia.net/"
+                }
+            ],
+            "description": "laminas-permissions-acl implementation and tooling",
+            "homepage": "https://github.com/webinertia/webinertia-acl/discussions",
+            "keywords": [
+                "access control list",
+                "laminas-permissions-acl",
+                "webinertia"
+            ],
+            "support": {
+                "issues": "https://github.com/webinertia/webinertia-acl/issues",
+                "source": "https://github.com/webinertia/webinertia-acl/tree/0.0.1"
+            },
+            "time": "2023-07-04T17:16:58+00:00"
+        },
+        {
+            "name": "webinertia/webinertia-db",
+            "version": "0.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/webinertia/webinertia-db.git",
+                "reference": "ae57eb0893ff34d73b52109c16991425a7c4e028"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/webinertia/webinertia-db/zipball/ae57eb0893ff34d73b52109c16991425a7c4e028",
+                "reference": "ae57eb0893ff34d73b52109c16991425a7c4e028",
+                "shasum": ""
+            },
+            "require": {
+                "laminas/laminas-component-installer": "^3.2",
+                "laminas/laminas-db": "^2.18.0",
+                "php": "~8.1.0 || ~8.2.0"
+            },
+            "require-dev": {
+                "laminas/laminas-coding-standard": "^2.5.0",
+                "laminas/laminas-test": "^4.8",
+                "phpstan/extension-installer": "^1.2",
+                "phpstan/phpstan": "1.10.22",
+                "phpunit/phpunit": "10.2.3",
+                "psalm/plugin-phpunit": "^0.18.4",
+                "slam/phpstan-laminas-framework": "^1.4"
+            },
+            "type": "library",
+            "extra": {
+                "laminas": {
+                    "module": "Webinertia\\Db"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Webinertia\\Db\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Joey Smith",
+                    "email": "jsmith@webinertia.net",
+                    "homepage": "https://webinertia.net/"
+                }
+            ],
+            "description": "Concrete Implementations of Laminas Db",
+            "homepage": "https://github.com/webinertia/webinertia-db/discussions",
+            "keywords": [
+                "laminas",
+                "laminas-db",
+                "webinertia"
+            ],
+            "support": {
+                "forum": "https://github.com/webinertia/webinertia-db/discussions",
+                "issues": "https://github.com/webinertia/webinertia-db/issues",
+                "source": "https://github.com/webinertia/webinertia-db/tree/0.0.2",
+                "wiki": "https://github.com/webinertia/webinertia-db/wiki"
+            },
+            "time": "2023-07-04T05:33:21+00:00"
+        },
+        {
             "name": "webinertia/webinertia-filter",
             "version": "0.0.3",
             "source": {
@@ -4620,16 +4812,16 @@
         },
         {
             "name": "webinertia/webinertia-log",
-            "version": "0.0.8",
+            "version": "0.0.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/webinertia/webinertia-log.git",
-                "reference": "ebb967fa4e3af6c6c464bb1e7b34b3d4a496085b"
+                "reference": "84553fe608fba822cf6547d5bb28b9b95125240c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/webinertia/webinertia-log/zipball/ebb967fa4e3af6c6c464bb1e7b34b3d4a496085b",
-                "reference": "ebb967fa4e3af6c6c464bb1e7b34b3d4a496085b",
+                "url": "https://api.github.com/repos/webinertia/webinertia-log/zipball/84553fe608fba822cf6547d5bb28b9b95125240c",
+                "reference": "84553fe608fba822cf6547d5bb28b9b95125240c",
                 "shasum": ""
             },
             "require": {
@@ -4681,22 +4873,80 @@
             ],
             "support": {
                 "issues": "https://github.com/webinertia/webinertia-log/issues",
-                "source": "https://github.com/webinertia/webinertia-log/tree/0.0.8"
+                "source": "https://github.com/webinertia/webinertia-log/tree/0.0.9"
             },
-            "time": "2023-07-03T00:51:57+00:00"
+            "time": "2023-07-03T20:59:49+00:00"
         },
         {
-            "name": "webinertia/webinertia-session",
-            "version": "0.0.3",
+            "name": "webinertia/webinertia-mvc",
+            "version": "0.0.2",
             "source": {
                 "type": "git",
-                "url": "https://github.com/webinertia/webinertia-session.git",
-                "reference": "09e45385ec850d82c75ad2002b024bf916dcbefd"
+                "url": "https://github.com/webinertia/webinertia-mvc.git",
+                "reference": "c058ce4b9ee54ac05b146cc0a1201f62534617e2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/webinertia/webinertia-session/zipball/09e45385ec850d82c75ad2002b024bf916dcbefd",
-                "reference": "09e45385ec850d82c75ad2002b024bf916dcbefd",
+                "url": "https://api.github.com/repos/webinertia/webinertia-mvc/zipball/c058ce4b9ee54ac05b146cc0a1201f62534617e2",
+                "reference": "c058ce4b9ee54ac05b146cc0a1201f62534617e2",
+                "shasum": ""
+            },
+            "require": {
+                "php": "~8.1.0 || ~8.2.0"
+            },
+            "require-dev": {
+                "laminas/laminas-coding-standard": "^2.5.0",
+                "laminas/laminas-test": "^4.8",
+                "phpstan/extension-installer": "^1.2",
+                "phpstan/phpstan": "1.10.22",
+                "phpunit/phpunit": "10.2.3",
+                "psalm/plugin-phpunit": "^0.18.4",
+                "slam/phpstan-laminas-framework": "^1.4"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Webinertia\\Mvc\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Joey Smith",
+                    "email": "jsmith@webinertia.net",
+                    "homepage": "https://webinertia.net/"
+                }
+            ],
+            "description": "Provides Webinertia MVC interfaces and abstract classes",
+            "homepage": "https://github.com/webinertia/webinertia-mvc/discussions",
+            "keywords": [
+                "laminas",
+                "mvc",
+                "webinertia"
+            ],
+            "support": {
+                "forum": "https://github.com/webinertia/webinertia-mvc/discussions",
+                "issues": "https://github.com/webinertia/webinertia-mvc/issues",
+                "source": "https://github.com/webinertia/webinertia-mvc/tree/0.0.2",
+                "wiki": "https://github.com/webinertia/webinertia-mvc/wiki"
+            },
+            "time": "2023-07-04T23:11:03+00:00"
+        },
+        {
+            "name": "webinertia/webinertia-session",
+            "version": "0.0.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/webinertia/webinertia-session.git",
+                "reference": "85280d05fd76c8b9366ed2fb81994deaeb6ed0db"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/webinertia/webinertia-session/zipball/85280d05fd76c8b9366ed2fb81994deaeb6ed0db",
+                "reference": "85280d05fd76c8b9366ed2fb81994deaeb6ed0db",
                 "shasum": ""
             },
             "require": {
@@ -4707,7 +4957,7 @@
                 "laminas/laminas-coding-standard": "^2.4.0",
                 "laminas/laminas-test": "^4.8",
                 "phpstan/extension-installer": "^1.2",
-                "phpstan/phpstan": "1.10.19",
+                "phpstan/phpstan": "1.10.21",
                 "phpunit/phpunit": "10.2.2",
                 "psalm/plugin-phpunit": "^0.18.4",
                 "slam/phpstan-laminas-framework": "^1.4"
@@ -4747,22 +4997,22 @@
             ],
             "support": {
                 "issues": "https://github.com/webinertia/webinertia-session/issues",
-                "source": "https://github.com/webinertia/webinertia-session/tree/0.0.3"
+                "source": "https://github.com/webinertia/webinertia-session/tree/0.0.4"
             },
-            "time": "2023-06-18T23:20:26+00:00"
+            "time": "2023-07-04T17:47:00+00:00"
         },
         {
             "name": "webinertia/webinertia-thememanager",
-            "version": "0.0.15",
+            "version": "0.0.17",
             "source": {
                 "type": "git",
                 "url": "https://github.com/webinertia/webinertia-thememanager.git",
-                "reference": "190e2332c66299b3bfaba2d67ece487669fb474a"
+                "reference": "f2540496aa301098ddda256a118b155649c7e6e9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/webinertia/webinertia-thememanager/zipball/190e2332c66299b3bfaba2d67ece487669fb474a",
-                "reference": "190e2332c66299b3bfaba2d67ece487669fb474a",
+                "url": "https://api.github.com/repos/webinertia/webinertia-thememanager/zipball/f2540496aa301098ddda256a118b155649c7e6e9",
+                "reference": "f2540496aa301098ddda256a118b155649c7e6e9",
                 "shasum": ""
             },
             "require": {
@@ -4773,15 +5023,15 @@
                 "laminas/laminas-session": "^2.16",
                 "php": "~8.1.0 || ~8.2.0",
                 "webinertia/limatus": "^0.0.12",
-                "webinertia/webinertia-session": "^0.0.3",
+                "webinertia/webinertia-session": "^0.0.3 || ^0.0.4",
                 "webinertia/webinertia-validator": "^0.0.3"
             },
             "require-dev": {
                 "laminas/laminas-coding-standard": "^2.5.0",
                 "laminas/laminas-test": "^4.8",
                 "phpstan/extension-installer": "^1.2",
-                "phpstan/phpstan": "1.10.21",
-                "phpunit/phpunit": "10.2.2",
+                "phpstan/phpstan": "1.10.23",
+                "phpunit/phpunit": "10.2.3",
                 "slam/phpstan-laminas-framework": "^1.4"
             },
             "suggest": {
@@ -4814,13 +5064,14 @@
             "keywords": [
                 "laminas",
                 "laminas view",
-                "laminas-mvc"
+                "laminas-mvc",
+                "webinertia"
             ],
             "support": {
                 "issues": "https://github.com/webinertia/webinertia-thememanager/issues",
-                "source": "https://github.com/webinertia/webinertia-thememanager/tree/0.0.15"
+                "source": "https://github.com/webinertia/webinertia-thememanager/tree/0.0.17"
             },
-            "time": "2023-07-02T06:23:14+00:00"
+            "time": "2023-07-04T17:54:02+00:00"
         },
         {
             "name": "webinertia/webinertia-validator",

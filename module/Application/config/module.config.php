@@ -6,7 +6,8 @@ namespace Application;
 
 use Laminas\Router\Http\Literal;
 use Laminas\Router\Http\Segment;
-use Laminas\ServiceManager\Factory\InvokableFactory;
+use Laminas\ServiceManager\AbstractFactory\ConfigAbstractFactory;
+use Webinertia\Mvc\Controller\Factory\AbstractControllerFactory;
 
 return [
     'router' => [
@@ -35,7 +36,7 @@ return [
     ],
     'controllers' => [
         'factories' => [
-            Controller\IndexController::class => InvokableFactory::class,
+            Controller\IndexController::class => AbstractControllerFactory::class,
         ],
     ],
     'view_manager' => [

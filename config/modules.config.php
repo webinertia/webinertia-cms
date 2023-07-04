@@ -31,5 +31,7 @@ return [
     'Webinertia\Session',
     'Webinertia\ThemeManager',
     'Webinertia\Log',
+    'Webinertia\Db',
+    'Webinertia\Acl',
     'Application',
 ];
