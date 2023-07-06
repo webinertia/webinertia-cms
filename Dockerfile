@@ -1,10 +1,10 @@
 FROM php:8.2-apache
 
-LABEL maintainer="getlaminas.org" \
+LABEL maintainer="webinertia.dev" \
     org.label-schema.docker.dockerfile="/Dockerfile" \
-    org.label-schema.name="Laminas MVC Skeleton" \
-    org.label-schema.url="https://docs.getlaminas.org/mvc/" \
-    org.label-schema.vcs-url="https://github.com/laminas/laminas-mvc-skeleton"
+    org.label-schema.name="Webinertia CMS" \
+    org.label-schema.url="https://github.com/webinertia/webinertia-cms/discussions" \
+    org.label-schema.vcs-url="https://github.com/webinertia/webinertia-cms"
 
 ## Update package information
 RUN apt-get update
@@ -32,7 +32,7 @@ RUN apt-get install --yes libicu-dev \
     && docker-php-ext-install intl
 
 ###
-## Optional PHP extensions 
+## Optional PHP extensions
 ###
 
 ## mbstring for i18n string support
@@ -43,11 +43,7 @@ RUN apt-get install --yes libicu-dev \
 ###
 
 ## MySQL PDO support
-# RUN docker-php-ext-install pdo_mysql
-
-## PostgreSQL PDO support
-# RUN apt-get install --yes libpq-dev \
-#     && docker-php-ext-install pdo_pgsql
+RUN docker-php-ext-install pdo_mysql
 
 ###
 ## laminas/laminas-cache supported extensions
@@ -62,11 +58,7 @@ RUN apt-get install --yes libicu-dev \
 #     && pecl install memcached \
 #     && docker-php-ext-enable memcached
 
-## MongoDB
-# RUN pecl install mongodb \
-#     && docker-php-ext-enable mongodb
-
-## Redis support.  igbinary and libzstd-dev are only needed based on 
+## Redis support.  igbinary and libzstd-dev are only needed based on
 ## redis pecl options
 # RUN pecl install igbinary \
 #     && docker-php-ext-enable igbinary \

@@ -1,7 +1,61 @@
 services:
-  laminas:
+
+  webcms:
+    container_name: webcms
     build: .
     ports:
-     - "8080:80"
+     - "80:80"
+    expose:
+      - "80"
+    restart: always
+    depends_on:
+      - mariadb
     volumes:
      - .:/var/www
+
+  phpmyadmin:
+    image: phpmyadmin
+    container_name: phpmyadmin
+    depends_on:
+      - mariadb
+    restart: always
+    ports:
+      - "8080:80"
+    environment:
+      - PMA_ARBITRARY=1
+
+  mailhog:
+    container_name: mailhog
+    image: mailhog/mailhog
+    restart: unless-stopped
+    networks:
+      - mailhog
+    ports:
+      - "1025:1025/tcp"
+      - "8025:8025/tcp"
+
+  mariadb:
+    container_name: mariadb
+    image: mariadb:lts
+    restart: unless-stopped
+    networks:
+      - mariadb
+    ports:
+      - "3306:3306/tcp"
+    volumes:
+      - mariadb:/var/lib/mysql
+      - ./mariadb/dev.cnf:/etc/mysql/conf.d/10-dev.cnf:ro
+    environment:
+      MYSQL_RANDOM_ROOT_PASSWORD: "yes"
+      MYSQL_USER: "webcms"
+      MYSQL_PASSWORD: "webcms"
+      MARIADB_AUTO_UPGRADE: true
+
+networks:
+    mailhog:
+        name: mailhog
+    mariadb:
+        name: mariadb
+
+volumes:
+    mariadb:
