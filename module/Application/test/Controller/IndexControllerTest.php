@@ -16,7 +16,15 @@ class IndexControllerTest extends AbstractHttpControllerTestCase
         // You can override configuration here with test case specific values,
         // such as sample view templates, path stacks, module_listener_options,
         // etc.
-        $configOverrides = [];
+        $configOverrides = [
+            'db' => [
+                'driver'   => 'Pdo_MySQL',
+                'dsn'      => 'mysql:dbname=webcms;host=db;charset=utf8',
+                //'dsn'      => 'mysql:dbname=webcms;host=localhost;charset=utf8',
+                'username' => 'webcms',
+                'password' => 'webcms',
+            ],
+        ];
 
         $this->setApplicationConfig(ArrayUtils::merge(
             include __DIR__ . '/../../../../config/application.config.php',
