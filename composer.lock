@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "32efedc8744f1a6c31575c88b2e40e09",
+    "content-hash": "fdceb150a67e59a99ea1c815e0c8d1f4",
     "packages": [
         {
             "name": "brick/math",
@@ -4937,16 +4937,16 @@
         },
         {
             "name": "webinertia/webinertia-session",
-            "version": "0.0.4",
+            "version": "0.0.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/webinertia/webinertia-session.git",
-                "reference": "85280d05fd76c8b9366ed2fb81994deaeb6ed0db"
+                "reference": "a61b268dd433826cd354f89ab3452010fa55ee40"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/webinertia/webinertia-session/zipball/85280d05fd76c8b9366ed2fb81994deaeb6ed0db",
-                "reference": "85280d05fd76c8b9366ed2fb81994deaeb6ed0db",
+                "url": "https://api.github.com/repos/webinertia/webinertia-session/zipball/a61b268dd433826cd354f89ab3452010fa55ee40",
+                "reference": "a61b268dd433826cd354f89ab3452010fa55ee40",
                 "shasum": ""
             },
             "require": {
@@ -4957,8 +4957,8 @@
                 "laminas/laminas-coding-standard": "^2.4.0",
                 "laminas/laminas-test": "^4.8",
                 "phpstan/extension-installer": "^1.2",
-                "phpstan/phpstan": "1.10.21",
-                "phpunit/phpunit": "10.2.2",
+                "phpstan/phpstan": "1.10.23",
+                "phpunit/phpunit": "10.2.3",
                 "psalm/plugin-phpunit": "^0.18.4",
                 "slam/phpstan-laminas-framework": "^1.4"
             },
@@ -4997,9 +4997,9 @@
             ],
             "support": {
                 "issues": "https://github.com/webinertia/webinertia-session/issues",
-                "source": "https://github.com/webinertia/webinertia-session/tree/0.0.4"
+                "source": "https://github.com/webinertia/webinertia-session/tree/0.0.5"
             },
-            "time": "2023-07-04T17:47:00+00:00"
+            "time": "2023-07-10T02:10:01+00:00"
         },
         {
             "name": "webinertia/webinertia-thememanager",
