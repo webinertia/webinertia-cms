@@ -19,8 +19,8 @@ class IndexControllerTest extends AbstractHttpControllerTestCase
         $configOverrides = [
             'db' => [
                 'driver'   => 'Pdo_MySQL',
-                'dsn'      => 'mysql:dbname=webcms;host=db;charset=utf8',
-                //'dsn'      => 'mysql:dbname=webcms;host=localhost;charset=utf8',
+                //'dsn'      => 'mysql:dbname=webcms;host=db;charset=utf8',
+                'dsn'      => 'mysql:dbname=webcms;host=localhost;charset=utf8',
                 'username' => 'webcms',
                 'password' => 'webcms',
             ],
