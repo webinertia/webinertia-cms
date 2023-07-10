@@ -6,3 +6,4 @@ data/cache/*
 phpunit.xml
 /.phpunit.cache
 .phpunit.result.cache
+.data

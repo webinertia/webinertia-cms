@@ -3,7 +3,7 @@ FROM php:8.2-apache
 LABEL maintainer="webinertia.dev" \
     org.label-schema.docker.dockerfile="/Dockerfile" \
     org.label-schema.name="Webinertia CMS" \
-    org.label-schema.url="https://github.com/webinertia/webinertia-cms/discussions" \
+    org.label-schema.url="https://cms.webinertia.dev" \
     org.label-schema.vcs-url="https://github.com/webinertia/webinertia-cms"
 
 ## Update package information
@@ -30,6 +30,10 @@ RUN apt-get install --yes git zlib1g-dev libzip-dev \
 RUN apt-get install --yes libicu-dev \
     && docker-php-ext-configure intl \
     && docker-php-ext-install intl
+
+## Install and enable xdebug
+# RUN pecl install xdebug \
+#     && docker-php-ext-enable xdebug
 
 ###
 ## Optional PHP extensions

@@ -1,61 +1,33 @@
 services:
-
-  webcms:
-    container_name: webcms
-    build: .
+  laminas:
+    build:
+      context: .
+      dockerfile: Dockerfile
     ports:
-     - "80:80"
+     - 80:80
     expose:
-      - "80"
-    restart: always
-    depends_on:
-      - mariadb
+      - 80
     volumes:
      - .:/var/www
-
-  phpmyadmin:
-    image: phpmyadmin
-    container_name: phpmyadmin
-    depends_on:
-      - mariadb
-    restart: always
+    links:
+     - db:db
+  db:
+    image: mysql:5.7
     ports:
-      - "8080:80"
-    environment:
-      - PMA_ARBITRARY=1
-
-  mailhog:
-    container_name: mailhog
-    image: mailhog/mailhog
-    restart: unless-stopped
-    networks:
-      - mailhog
-    ports:
-      - "1025:1025/tcp"
-      - "8025:8025/tcp"
-
-  mariadb:
-    container_name: mariadb
-    image: mariadb:lts
-    restart: unless-stopped
-    networks:
-      - mariadb
-    ports:
-      - "3306:3306/tcp"
+     - 3306:3306
+    command:
+      --default-authentication-plugin=mysql_native_password
     volumes:
-      - mariadb:/var/lib/mysql
-      - ./mariadb/dev.cnf:/etc/mysql/conf.d/10-dev.cnf:ro
+     - ./.data/db:/var/lib/mysql
+     - ./.docker/mysql/:/docker-entrypoint-initdb.d/
     environment:
-      MYSQL_RANDOM_ROOT_PASSWORD: "yes"
       MYSQL_USER: "webcms"
       MYSQL_PASSWORD: "webcms"
-      MARIADB_AUTO_UPGRADE: true
-
-networks:
-    mailhog:
-        name: mailhog
-    mariadb:
-        name: mariadb
-
-volumes:
-    mariadb:
+      MYSQL_DATABASE: "webcms"
+      MYSQL_ROOT_PASSWORD: "root"
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    ports:
+     - 8080:80
+    environment:
+     PMA_HOST: db

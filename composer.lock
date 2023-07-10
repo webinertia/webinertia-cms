@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "9d0465f423e5992cfed328a964d4a0db",
+    "content-hash": "32efedc8744f1a6c31575c88b2e40e09",
     "packages": [
         {
             "name": "brick/math",
@@ -5003,16 +5003,16 @@
         },
         {
             "name": "webinertia/webinertia-thememanager",
-            "version": "0.0.17",
+            "version": "0.0.18",
             "source": {
                 "type": "git",
                 "url": "https://github.com/webinertia/webinertia-thememanager.git",
-                "reference": "f2540496aa301098ddda256a118b155649c7e6e9"
+                "reference": "9b292f666ad9a015df31483bdb5dccc91f37e24b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/webinertia/webinertia-thememanager/zipball/f2540496aa301098ddda256a118b155649c7e6e9",
-                "reference": "f2540496aa301098ddda256a118b155649c7e6e9",
+                "url": "https://api.github.com/repos/webinertia/webinertia-thememanager/zipball/9b292f666ad9a015df31483bdb5dccc91f37e24b",
+                "reference": "9b292f666ad9a015df31483bdb5dccc91f37e24b",
                 "shasum": ""
             },
             "require": {
@@ -5023,14 +5023,13 @@
                 "laminas/laminas-session": "^2.16",
                 "php": "~8.1.0 || ~8.2.0",
                 "webinertia/limatus": "^0.0.12",
-                "webinertia/webinertia-session": "^0.0.3 || ^0.0.4",
-                "webinertia/webinertia-validator": "^0.0.3"
+                "webinertia/webinertia-mvc": "^0.0.2"
             },
             "require-dev": {
                 "laminas/laminas-coding-standard": "^2.5.0",
                 "laminas/laminas-test": "^4.8",
                 "phpstan/extension-installer": "^1.2",
-                "phpstan/phpstan": "1.10.23",
+                "phpstan/phpstan": "1.10.25",
                 "phpunit/phpunit": "10.2.3",
                 "slam/phpstan-laminas-framework": "^1.4"
             },
@@ -5069,9 +5068,58 @@
             ],
             "support": {
                 "issues": "https://github.com/webinertia/webinertia-thememanager/issues",
-                "source": "https://github.com/webinertia/webinertia-thememanager/tree/0.0.17"
+                "source": "https://github.com/webinertia/webinertia-thememanager/tree/0.0.18"
             },
-            "time": "2023-07-04T17:54:02+00:00"
+            "time": "2023-07-08T17:12:59+00:00"
+        },
+        {
+            "name": "webinertia/webinertia-utils",
+            "version": "0.0.10",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/webinertia/utils.git",
+                "reference": "21b56d45eecebe32dd5924129d5e54dfbc297150"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/webinertia/utils/zipball/21b56d45eecebe32dd5924129d5e54dfbc297150",
+                "reference": "21b56d45eecebe32dd5924129d5e54dfbc297150",
+                "shasum": ""
+            },
+            "require": {
+                "laminas/laminas-component-installer": "^3.2.0",
+                "laminas/laminas-servicemanager": "^3.20.0",
+                "php": "~8.1.0 || ~8.2.0"
+            },
+            "type": "library",
+            "extra": {
+                "laminas": {
+                    "component": "Webinertia\\Utils",
+                    "config-provider": "Webinertia\\Utils\\ConfigProvider"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Webinertia\\Utils\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "description": "Webinertia Org Utilities",
+            "homepage": "https://github.com/webinertia",
+            "keywords": [
+                "utils",
+                "webinertia"
+            ],
+            "support": {
+                "chat": "https://github.com/webinertia/modelmanager/discussions",
+                "docs": "https://github.com/webinertia/modelmanager/wiki",
+                "issues": "https://github.com/webinertia/modelmanager/issues",
+                "source": "https://github.com/webinertia/modelmanager"
+            },
+            "time": "2023-04-25T01:17:36+00:00"
         },
         {
             "name": "webinertia/webinertia-validator",

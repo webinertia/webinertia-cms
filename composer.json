@@ -31,7 +31,8 @@
         "webinertia/webinertia-log": "^0.0.9",
         "webinertia/webinertia-mvc": "^0.0.2",
         "webinertia/webinertia-session": "^0.0.4",
-        "webinertia/webinertia-thememanager": "^0.0.17",
+        "webinertia/webinertia-thememanager": "^0.0.18",
+        "webinertia/webinertia-utils": "^0.0.10",
         "webinertia/webinertia-validator": "^0.0.3"
     },
     "autoload": {
