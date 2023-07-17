@@ -7,7 +7,8 @@ namespace Application;
 use Laminas\Router\Http\Literal;
 use Laminas\Router\Http\Segment;
 use Laminas\ServiceManager\AbstractFactory\ConfigAbstractFactory;
-use Webinertia\Mvc\Controller\Factory\AbstractControllerFactory;
+use Laminas\ServiceManager\Factory\InvokableFactory;
+use Webinertia\Mvc\Controller\Factory\ControllerFactory;
 
 return [
     'router' => [
@@ -32,11 +33,22 @@ return [
                     ],
                 ],
             ],
+            'upload-manager' => [
+                'type' => Segment::class,
+                'options' => [
+                    'route' => '/admin/upload[/:action]',
+                    'defaults' => [
+                        'controller' => Controller\AdminUploadController::class,
+                        'action' => 'manager',
+                    ],
+                ],
+            ],
         ],
     ],
     'controllers' => [
         'factories' => [
-            Controller\IndexController::class => AbstractControllerFactory::class,
+            Controller\IndexController::class       => ControllerFactory::class,
+            Controller\AdminUploadController::class => ControllerFactory::class,
         ],
     ],
     'view_manager' => [
@@ -45,12 +57,6 @@ return [
         'doctype'                  => 'HTML5',
         'not_found_template'       => 'error/404',
         'exception_template'       => 'error/index',
-        'template_map' => [
-            'layout/layout'           => __DIR__ . '/../view/layout/layout.phtml',
-            'application/index/index' => __DIR__ . '/../view/application/index/index.phtml',
-            'error/404'               => __DIR__ . '/../view/error/404.phtml',
-            'error/index'             => __DIR__ . '/../view/error/index.phtml',
-        ],
         'template_path_stack' => [
             __DIR__ . '/../view',
         ],
@@ -63,6 +69,12 @@ return [
                 'class'  => 'nav-link',
                 'order'  => -999,
                 'action' => 'index',
+            ],
+            [
+                'label'  => 'Upload',
+                'route'  => 'application',
+                'class'  => 'nav-link',
+                'action' => 'upload',
             ],
         ],
     ],

@@ -20,4 +20,21 @@ return [
     'view_manager' => [
         'display_exceptions' => true,
     ],
+    'session_manager' => [
+        'options' => [
+            'attach_default_validators' => false
+        ],
+    ],
+    'log_settings' => [
+        'log_errors'      => false,
+        'log_exceptions'  => false,
+        'log_table_name'  => 'log',
+        'log_time_format' => 'm-d-Y H:i:s',
+    ],
+    // webinertia utils config
+    'diagnostic_settings' => [
+        'log_execution_time'  => true,
+        'enable_firebug'      => false,
+        'enable_db_profiling' => true,
+    ],
 ];

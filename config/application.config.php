@@ -23,6 +23,7 @@ return [
         'config_glob_paths' => [
             realpath(__DIR__) . '/autoload/{{,*.}global,{,*.}local}.php',
             realpath(__DIR__ . '/../') . '/data/app/settings/{,*.}settings.php',
+            realpath(__DIR__ . '/../') . '/data/app/settings/{,*.}config.php',
         ],
 
         // Whether or not to enable a configuration cache.

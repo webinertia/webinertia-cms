@@ -8,6 +8,7 @@ use Laminas\View\Model\ViewModel;
 use Webinertia\Log\LogEvent;
 use Webinertia\Mvc\Controller\AbstractAppController;
 
+
 class IndexController extends AbstractAppController
 {
     public function indexAction()
@@ -15,6 +16,7 @@ class IndexController extends AbstractAppController
         $view = new ViewModel();
         $session = $this->getSessionContainer();
         $extra = ['firstName' => 'Joey', 'lastName' => 'Smith'];
+        //die('running');
         //$this->getEventManager()->trigger(LogEvent::EMERGENCY, 'Test Message', $extra);
         return $view;
     }

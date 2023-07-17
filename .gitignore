@@ -7,4 +7,5 @@ phpunit.xml
 /.phpunit.cache
 .phpunit.result.cache
 .data
-
+public/upload
+!public/upload/.gitkeep

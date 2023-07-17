@@ -7,6 +7,7 @@
  */
 
 return [
+    'Webinertia\Uploader',
     'Laminas\Navigation',
     'Laminas\Mvc\Plugin\FilePrg',
     'Laminas\Mvc\Plugin\FlashMessenger',
@@ -33,5 +34,7 @@ return [
     'Webinertia\Log',
     'Webinertia\Db',
     'Webinertia\Acl',
+    'Webinertia\Utils',
+    'Laminas\Diactoros',
     'Application',
 ];

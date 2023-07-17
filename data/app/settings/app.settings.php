@@ -1,4 +1,8 @@
 <?php
 return [
-    'app_settings' => [],
+    'app_settings' => [
+        'server' => [
+            'time_zone' => ''
+        ],
+    ],
 ];
