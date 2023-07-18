@@ -9,8 +9,15 @@ use Laminas\Router\Http\Segment;
 use Laminas\ServiceManager\AbstractFactory\ConfigAbstractFactory;
 use Laminas\ServiceManager\Factory\InvokableFactory;
 use Webinertia\Mvc\Controller\Factory\ControllerFactory;
+use Webinertia\Mvc\Service;
 
 return [
+    'service_manager' => [
+        'factories' => [
+            // Replace the default service with ours so we can keep track of the custom codes and messages
+            'Response' => Service\ResponseFactory::class,
+        ],
+    ],
     'router' => [
         'routes' => [
             'home' => [
