@@ -14,8 +14,11 @@ use Webinertia\Mvc\FormManagerAwareInterface;
 use Webinertia\Mvc\FormManagerAwareTrait;
 use Webinertia\Uploader\UploaderEvent;
 
-final class AdminUploadController extends AbstractAppController implements AdminControllerInterface, FormManagerAwareInterface
+final class AdminUploadController extends AbstractAppController implements
+    AdminControllerInterface,
+    FormManagerAwareInterface
 {
+
     use FormManagerAwareTrait;
 
     public function managerAction()
@@ -25,7 +28,7 @@ final class AdminUploadController extends AbstractAppController implements Admin
         $form = $this->formManager->get(UploadForm::class);
         $form->setAttribute('', '/admin/upload');
         if ($this->request->isPost()) {
-            $form->setData(array_merge($this->request->getPost()->toArray(), $this->request->getFiles()->toArray()));
+            $form->setData(array_merge($this->request->getPost()->toArray()));
             if ($form->isValid()) {
                 $data = $form->getData();
                 $response = $this->getEventManager()->triggerEvent(

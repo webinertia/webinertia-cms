@@ -79,9 +79,9 @@ return [
             ],
             [
                 'label'  => 'Upload',
-                'route'  => 'application',
+                'route'  => 'upload-manager',
+                'action' => 'manager',
                 'class'  => 'nav-link',
-                'action' => 'upload',
             ],
         ],
     ],
