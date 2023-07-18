@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "cf7ff741cf72273313c50e8a1e8f3aeb",
+    "content-hash": "15a13cb7d948de881840186a47057a2d",
     "packages": [
         {
             "name": "brick/math",
@@ -4818,16 +4818,16 @@
         },
         {
             "name": "webinertia/webinertia-db",
-            "version": "0.0.4",
+            "version": "0.0.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/webinertia/webinertia-db.git",
-                "reference": "5d65ae0a0c380b47c6250f8991ad2594e1be3c8e"
+                "reference": "524229ba985c59b9dc33d9a9842f2a152036dc53"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/webinertia/webinertia-db/zipball/5d65ae0a0c380b47c6250f8991ad2594e1be3c8e",
-                "reference": "5d65ae0a0c380b47c6250f8991ad2594e1be3c8e",
+                "url": "https://api.github.com/repos/webinertia/webinertia-db/zipball/524229ba985c59b9dc33d9a9842f2a152036dc53",
+                "reference": "524229ba985c59b9dc33d9a9842f2a152036dc53",
                 "shasum": ""
             },
             "require": {
@@ -4876,10 +4876,10 @@
             "support": {
                 "forum": "https://github.com/webinertia/webinertia-db/discussions",
                 "issues": "https://github.com/webinertia/webinertia-db/issues",
-                "source": "https://github.com/webinertia/webinertia-db/tree/0.0.4",
+                "source": "https://github.com/webinertia/webinertia-db/tree/0.0.5",
                 "wiki": "https://github.com/webinertia/webinertia-db/wiki"
             },
-            "time": "2023-07-13T05:15:12+00:00"
+            "time": "2023-07-17T04:36:49+00:00"
         },
         {
             "name": "webinertia/webinertia-filter",
@@ -5214,31 +5214,31 @@
         },
         {
             "name": "webinertia/webinertia-uploader",
-            "version": "0.0.8",
+            "version": "0.0.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/webinertia/webinertia-uploader.git",
-                "reference": "93cbb477bbcc46e358a7982e7e72953981bfa764"
+                "reference": "7fdf1bcd49db7145a37328ca63996d67b30984dc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/webinertia/webinertia-uploader/zipball/93cbb477bbcc46e358a7982e7e72953981bfa764",
-                "reference": "93cbb477bbcc46e358a7982e7e72953981bfa764",
+                "url": "https://api.github.com/repos/webinertia/webinertia-uploader/zipball/7fdf1bcd49db7145a37328ca63996d67b30984dc",
+                "reference": "7fdf1bcd49db7145a37328ca63996d67b30984dc",
                 "shasum": ""
             },
             "require": {
                 "laminas/laminas-diactoros": "^3.0",
                 "laminas/laminas-eventmanager": "^3.10.0",
                 "php": "~8.1.0 || ~8.2.0",
-                "webinertia/webinertia-db": "^0.0.3 || ^0.0.4",
+                "webinertia/webinertia-db": "^0.0.3 || ^0.0.4 || ^0.0.5",
                 "webinertia/webinertia-filter": "^0.0.3 || ^0.0.4"
             },
             "require-dev": {
-                "laminas/laminas-coding-standard": "^2.5.0",
+                "laminas/laminas-coding-standard": "^2.5",
                 "laminas/laminas-test": "^4.8",
                 "phpstan/extension-installer": "^1.2",
-                "phpstan/phpstan": "1.10.25",
-                "phpunit/phpunit": "10.2.4",
+                "phpstan/phpstan": "^1.10",
+                "phpunit/phpunit": "^10.2",
                 "psalm/plugin-phpunit": "^0.18.4",
                 "slam/phpstan-laminas-framework": "^1.4"
             },
@@ -5277,9 +5277,9 @@
             ],
             "support": {
                 "issues": "https://github.com/webinertia/webinertia-uploader/issues",
-                "source": "https://github.com/webinertia/webinertia-uploader/tree/0.0.8"
+                "source": "https://github.com/webinertia/webinertia-uploader/tree/0.0.9"
             },
-            "time": "2023-07-17T04:31:30+00:00"
+            "time": "2023-07-18T04:21:24+00:00"
         },
         {
             "name": "webinertia/webinertia-utils",
