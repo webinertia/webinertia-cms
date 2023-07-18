@@ -99,9 +99,9 @@
         }
     },
     "require-dev": {
-        "laminas/laminas-coding-standard": "^2.5.0",
-        "laminas/laminas-developer-tools": "^2.8.0",
-        "laminas/laminas-test": "^4.7.0",
+        "laminas/laminas-coding-standard": "^2.5",
+        "laminas/laminas-developer-tools": "^2.8",
+        "laminas/laminas-test": "^4.7",
         "phpstan/phpstan": "^1.10",
         "phpunit/phpunit": "^10.2",
         "slam/phpstan-laminas-framework": "^1.4",
