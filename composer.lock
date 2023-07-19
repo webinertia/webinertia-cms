@@ -409,16 +409,16 @@
         },
         {
             "name": "laminas/laminas-component-installer",
-            "version": "3.2.1",
+            "version": "3.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laminas/laminas-component-installer.git",
-                "reference": "a7b486a4df99e0e1cf45ae6e72d88a475fecfb90"
+                "reference": "e1ceb9a7e768660e338974e22d8f74a0771980a9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laminas/laminas-component-installer/zipball/a7b486a4df99e0e1cf45ae6e72d88a475fecfb90",
-                "reference": "a7b486a4df99e0e1cf45ae6e72d88a475fecfb90",
+                "url": "https://api.github.com/repos/laminas/laminas-component-installer/zipball/e1ceb9a7e768660e338974e22d8f74a0771980a9",
+                "reference": "e1ceb9a7e768660e338974e22d8f74a0771980a9",
                 "shasum": ""
             },
             "require": {
@@ -430,7 +430,7 @@
             },
             "require-dev": {
                 "composer/composer": "^2.4.4",
-                "laminas/laminas-coding-standard": "~2.4.0",
+                "laminas/laminas-coding-standard": "~2.5.0",
                 "mikey179/vfsstream": "^1.6.11",
                 "phpunit/phpunit": "^9.5.26",
                 "psalm/plugin-phpunit": "^0.18.0",
@@ -472,7 +472,7 @@
                     "type": "community_bridge"
                 }
             ],
-            "time": "2023-05-24T16:25:08+00:00"
+            "time": "2023-07-17T06:52:58+00:00"
         },
         {
             "name": "laminas/laminas-config",
@@ -969,16 +969,16 @@
         },
         {
             "name": "laminas/laminas-form",
-            "version": "3.12.0",
+            "version": "3.13.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laminas/laminas-form.git",
-                "reference": "263d18601cfcddf6621889704d66b4a1c7422d63"
+                "reference": "c6100a664879b6f5638b0fae0c844051f2159902"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laminas/laminas-form/zipball/263d18601cfcddf6621889704d66b4a1c7422d63",
-                "reference": "263d18601cfcddf6621889704d66b4a1c7422d63",
+                "url": "https://api.github.com/repos/laminas/laminas-form/zipball/c6100a664879b6f5638b0fae0c844051f2159902",
+                "reference": "c6100a664879b6f5638b0fae0c844051f2159902",
                 "shasum": ""
             },
             "require": {
@@ -1001,21 +1001,21 @@
                 "ext-intl": "*",
                 "laminas/laminas-captcha": "^2.16",
                 "laminas/laminas-coding-standard": "^2.5",
-                "laminas/laminas-db": "^2.17",
+                "laminas/laminas-db": "^2.18",
                 "laminas/laminas-escaper": "^2.12",
                 "laminas/laminas-eventmanager": "^3.10",
-                "laminas/laminas-filter": "^2.31",
-                "laminas/laminas-i18n": "^2.21",
+                "laminas/laminas-filter": "^2.32",
+                "laminas/laminas-i18n": "^2.23",
                 "laminas/laminas-modulemanager": "^2.14.0",
                 "laminas/laminas-recaptcha": "^3.6",
-                "laminas/laminas-servicemanager": "^3.20",
+                "laminas/laminas-servicemanager": "^3.21",
                 "laminas/laminas-session": "^2.16",
                 "laminas/laminas-text": "^2.10.0",
-                "laminas/laminas-validator": "^2.30.1",
-                "laminas/laminas-view": "^2.27",
-                "phpunit/phpunit": "^10.0.16",
+                "laminas/laminas-validator": "^2.33",
+                "laminas/laminas-view": "^2.28",
+                "phpunit/phpunit": "^10.2.2",
                 "psalm/plugin-phpunit": "^0.18.4",
-                "vimeo/psalm": "^5.8"
+                "vimeo/psalm": "^5.13"
             },
             "suggest": {
                 "doctrine/annotations": "^1.14, required to use laminas-form annotations support",
@@ -1062,7 +1062,7 @@
                     "type": "community_bridge"
                 }
             ],
-            "time": "2023-06-26T22:26:33+00:00"
+            "time": "2023-07-18T12:39:09+00:00"
         },
         {
             "name": "laminas/laminas-http",
@@ -4818,16 +4818,16 @@
         },
         {
             "name": "webinertia/webinertia-db",
-            "version": "0.0.5",
+            "version": "0.0.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/webinertia/webinertia-db.git",
-                "reference": "524229ba985c59b9dc33d9a9842f2a152036dc53"
+                "reference": "c16533f6996574aad3c7262330cca1e8b6bf4883"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/webinertia/webinertia-db/zipball/524229ba985c59b9dc33d9a9842f2a152036dc53",
-                "reference": "524229ba985c59b9dc33d9a9842f2a152036dc53",
+                "url": "https://api.github.com/repos/webinertia/webinertia-db/zipball/c16533f6996574aad3c7262330cca1e8b6bf4883",
+                "reference": "c16533f6996574aad3c7262330cca1e8b6bf4883",
                 "shasum": ""
             },
             "require": {
@@ -4836,11 +4836,11 @@
                 "php": "~8.1.0 || ~8.2.0"
             },
             "require-dev": {
-                "laminas/laminas-coding-standard": "^2.5.0",
+                "laminas/laminas-coding-standard": "^2.5",
                 "laminas/laminas-test": "^4.8",
                 "phpstan/extension-installer": "^1.2",
-                "phpstan/phpstan": "1.10.25",
-                "phpunit/phpunit": "10.2.3",
+                "phpstan/phpstan": "^1.10",
+                "phpunit/phpunit": "^10.2",
                 "psalm/plugin-phpunit": "^0.18.4",
                 "slam/phpstan-laminas-framework": "^1.4"
             },
@@ -4876,10 +4876,10 @@
             "support": {
                 "forum": "https://github.com/webinertia/webinertia-db/discussions",
                 "issues": "https://github.com/webinertia/webinertia-db/issues",
-                "source": "https://github.com/webinertia/webinertia-db/tree/0.0.5",
+                "source": "https://github.com/webinertia/webinertia-db/tree/0.0.6",
                 "wiki": "https://github.com/webinertia/webinertia-db/wiki"
             },
-            "time": "2023-07-17T04:36:49+00:00"
+            "time": "2023-07-18T04:26:45+00:00"
         },
         {
             "name": "webinertia/webinertia-filter",
@@ -5218,19 +5218,19 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/webinertia/webinertia-uploader.git",
-                "reference": "7fdf1bcd49db7145a37328ca63996d67b30984dc"
+                "reference": "fce2ac33464f7404978f5c0411987528f8d340a0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/webinertia/webinertia-uploader/zipball/7fdf1bcd49db7145a37328ca63996d67b30984dc",
-                "reference": "7fdf1bcd49db7145a37328ca63996d67b30984dc",
+                "url": "https://api.github.com/repos/webinertia/webinertia-uploader/zipball/fce2ac33464f7404978f5c0411987528f8d340a0",
+                "reference": "fce2ac33464f7404978f5c0411987528f8d340a0",
                 "shasum": ""
             },
             "require": {
                 "laminas/laminas-diactoros": "^3.0",
                 "laminas/laminas-eventmanager": "^3.10.0",
                 "php": "~8.1.0 || ~8.2.0",
-                "webinertia/webinertia-db": "^0.0.3 || ^0.0.4 || ^0.0.5",
+                "webinertia/webinertia-db": "^0.0.3 || ^0.0.4 || ^0.0.5 || ^0.0.6",
                 "webinertia/webinertia-filter": "^0.0.3 || ^0.0.4"
             },
             "require-dev": {
@@ -5279,7 +5279,7 @@
                 "issues": "https://github.com/webinertia/webinertia-uploader/issues",
                 "source": "https://github.com/webinertia/webinertia-uploader/tree/0.0.9"
             },
-            "time": "2023-07-18T04:21:24+00:00"
+            "time": "2023-07-18T04:48:42+00:00"
         },
         {
             "name": "webinertia/webinertia-utils",
@@ -6407,16 +6407,16 @@
         },
         {
             "name": "phpunit/phpunit",
-            "version": "10.2.5",
+            "version": "10.2.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "15a89f123d8ca9c1e1598d6d87a56a8bf28c72cd"
+                "reference": "1c17815c129f133f3019cc18e8d0c8622e6d9bcd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/15a89f123d8ca9c1e1598d6d87a56a8bf28c72cd",
-                "reference": "15a89f123d8ca9c1e1598d6d87a56a8bf28c72cd",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/1c17815c129f133f3019cc18e8d0c8622e6d9bcd",
+                "reference": "1c17815c129f133f3019cc18e8d0c8622e6d9bcd",
                 "shasum": ""
             },
             "require": {
@@ -6488,7 +6488,7 @@
             "support": {
                 "issues": "https://github.com/sebastianbergmann/phpunit/issues",
                 "security": "https://github.com/sebastianbergmann/phpunit/security/policy",
-                "source": "https://github.com/sebastianbergmann/phpunit/tree/10.2.5"
+                "source": "https://github.com/sebastianbergmann/phpunit/tree/10.2.6"
             },
             "funding": [
                 {
@@ -6504,7 +6504,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2023-07-14T04:18:47+00:00"
+            "time": "2023-07-17T12:08:28+00:00"
         },
         {
             "name": "sebastian/cli-parser",
