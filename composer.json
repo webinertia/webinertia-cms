@@ -103,7 +103,7 @@
         "laminas/laminas-developer-tools": "^2.8",
         "laminas/laminas-test": "^4.7",
         "phpstan/phpstan": "^1.10",
-        "phpunit/phpunit": "^10.2",
+        "phpunit/phpunit": "^11.0",
         "slam/phpstan-laminas-framework": "^1.4",
         "webinertia/bjy-profiler": "^0.0.11"
     }
