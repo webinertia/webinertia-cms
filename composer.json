@@ -25,17 +25,17 @@
         "laminas/laminas-navigation": "^2.18.1",
         "laminas/laminas-permissions-acl": "^2.15",
         "ramsey/uuid": "^4.7",
-        "webinertia/limatus": "^0.0.12",
+        "webinertia/limatus": "^0.0.12 || ^0.0.15",
         "webinertia/webinertia-acl": "^0.0.1",
-        "webinertia/webinertia-db": "^0.0.4 || ^0.0.5 || ^0.0.6",
-        "webinertia/webinertia-filter": "^0.0.3 || ^0.0.4",
+        "webinertia/webinertia-db": "^0.0.4 || ^0.0.5 || ^0.0.6 || ^0.0.7",
+        "webinertia/webinertia-filter": "^0.0.3 || ^0.0.4 || ^0.0.5",
         "webinertia/webinertia-log": "^0.0.9",
         "webinertia/webinertia-mvc": "^0.0.3 || ^0.0.4 || ^0.0.5",
         "webinertia/webinertia-session": "^0.0.5",
         "webinertia/webinertia-thememanager": "^0.0.21",
         "webinertia/webinertia-uploader": "^0.0.7 || ^0.0.8 || ^0.0.9",
         "webinertia/webinertia-utils": "^0.0.10",
-        "webinertia/webinertia-validator": "^0.0.3"
+        "webinertia/webinertia-validator": "^0.0.3 || ^0.0.4"
     },
     "autoload": {
         "psr-4": {
